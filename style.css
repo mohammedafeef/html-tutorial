@@ -1,3 +1,10 @@
-.font-lg{
-    font-size:30px;
+.container{
+    padding:20px;
+    display:flex;
+    flex-direction:column;
+    width:30%;
 }
+
+
+
+
