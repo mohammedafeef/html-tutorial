@@ -1,53 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link 
-        rel="stylesheet" 
-        href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Special input tags</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <h2>special tags</h2>
+      <h2>special tags</h2>
 
-        <label>select input</label>
-        <select name="select" id="select">
-            <option value="1">option 1</option>
-            <option value="2">option 2</option>
-        </select>
+      <label>select input</label>
+      <select name="select" id="select">
+        <option value="1">option 1</option>
+        <option value="2">option 2</option>
+      </select>
+      <label>multiple select input</label>
+      <select name="multiple" id="multiple" multiple>
+        <option value="1">option 1</option>
+        <option value="2">option 2</option>
+      </select>
 
-        <label>textarea input</label>
-        <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+      <label>textarea input</label>
+      <textarea name="textarea" id="textarea" cols="30" rows="10" noresize></textarea>
 
-        <h3>Add on</h3>
-        <label>datalist input</label>
-        <input list="datalist" name="datalist" id="datalist">
-        <datalist id="datalist">
-            <option value="1">option 1</option>
-            <option value="2">option 2</option>
-        </datalist>
+      <h3>Add on</h3>
+      <label>datalist input</label>
+      <input list="browsers" name="browser" id="browser" />
+      <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
 
-        <label>optgroup input</label>
-        <select name="optgroup" id="optgroup">
-            <optgroup label="group 1">
-                <option value="1">option 1</option>
-                <option value="2">option 2</option>
-            </optgroup>
-            <optgroup label="group 2">
-                <option value="3">option 3</option>
-                <option value="4">option 4</option>
-            </optgroup>
-        </select>
+      <label>optgroup input</label>
+      <select name="optgroup" id="optgroup">
+        <optgroup label="group 1">
+          <option value="1">option 1</option>
+          <option value="2">option 2</option>
+        </optgroup>
+        <optgroup label="group 2">
+          <option value="3">option 3</option>
+          <option value="4">option 4</option>
+        </optgroup>
+      </select>
 
-        <label>fieldset input</label>
-        <fieldset>
-            <legend>legend</legend>
-            <label>text input</label>
-            <input type="text" name="text" id="text">
-            <label>password input</label>
-        </fieldset>
+      <label>fieldset input</label>
+      <fieldset>
+        <legend>legend</legend>
+        <label>text input</label>
+        <input type="text" name="text" id="text" />
+        <label>password input</label>
+        <input type="password" name="password" id="password" />
+      </fieldset>
     </div>
-</body>
+  </body>
 </html>
