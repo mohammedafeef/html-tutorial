@@ -4,49 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>list</title>
+    <title>table</title>
   </head>
   <body>
     <div class="container">
-      <h2>Lists</h2>
-      <h3>Unordered list</h3>
-      <ul type="disc">
-        <li>Home</li>
-        <li>List</li>
-        <li>Add</li>
-      </ul>
-      <h3>Ordered list</h3>
-      <ol type="I">
-        <li>Home</li>
-        <li>List</li>
-        <li>Add</li>
-        <li>Remove</li>
-      </ol>
-      <h3>Definition list</h3>
-      <dl>
-        <dt>Home</dt>
-        <dd>Home page</dd>
-        <dt>List</dt>
-        <dd>List page</dd>
-        <dt>Add</dt>
-        <dd>Add page</dd>
-        <dt>Remove</dt>
-        <dd>Remove page</dd>
-      </dl>
-
-      <h3>Nested list</h3>
-      <ul>
-        <li>Home</li>
-        <li>List</li>
-        <li>Add</li>
-        <li>Remove</li>
-        <ul>
-          <li>Home</li>
-          <li>List</li>
-          <li>Add</li>
-          <li>Remove</li>
-        </ul>
-        <li>Remove</li>
+      <h2>table</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>temp id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>phone</th>
+            <th>tel</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="2" align="center">1</td>
+            <td>john</td>
+            <td>john@gmail.com</td>
+            <td>1234567890</td>
+            <td rowspan="2">1234567890</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>22</td>
+            <td>doe</td>
+            <td>doe@gmail.com</td>
+            <td>1234567890</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </body>
 </html>
